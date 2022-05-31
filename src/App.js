@@ -1,15 +1,14 @@
-// import logo from "./logo.svg";
-import "./App.css";
-import Header from "./components/header";
-import Home from "./components/home";
-import News from "./components/news";
-import Footer from "./components/footer";
+import logo from './logo.svg';
+import './App.css';
+import Home from './components/Home';
+import New from './components/New';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/news" element={<News />}></Route>
+          <Route path="/new" element={<New />}></Route>
         </Routes>
         <Footer />
       </div>
